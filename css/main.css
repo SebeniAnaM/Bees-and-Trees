@@ -1,0 +1,450 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: firebrick;
+}
+
+.frame {
+  background-color: #CCC489;
+  width: 680px;
+  height: 580px;
+  display: flex;
+  align-content: center;
+  margin-left: calc((100% - 680px) / 2);
+  margin-top: calc((100% - 580px) / 2);
+  box-shadow: 30px 1px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.frame .canvas {
+  width: 600px;
+  height: 500px;
+  background-color: #344AAD;
+  position: relative;
+  margin: 40px;
+}
+.frame .canvas .dirt .one {
+  width: 550px;
+  height: 2px;
+  background-color: #040308;
+  position: absolute;
+  top: 390px;
+  left: 25px;
+}
+.frame .canvas .dirt .two {
+  width: 500px;
+  height: 2px;
+  background-color: #040308;
+  position: absolute;
+  top: 400px;
+  left: 50px;
+}
+.frame .canvas .dirt .three {
+  width: 400px;
+  height: 2px;
+  background-color: #040308;
+  position: absolute;
+  top: 410px;
+  left: 130px;
+}
+.frame .canvas .dirt .four {
+  width: 280px;
+  height: 2px;
+  background-color: #040308;
+  position: absolute;
+  top: 420px;
+  left: 240px;
+}
+.frame .canvas .dirt .five {
+  width: 220px;
+  height: 2px;
+  background-color: #040308;
+  position: absolute;
+  top: 430px;
+  left: 290px;
+}
+.frame .canvas .dirt .six {
+  width: 120px;
+  height: 2px;
+  background-color: #040308;
+  position: absolute;
+  top: 440px;
+  left: 360px;
+}
+.frame .canvas .middle-item {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top: 130px;
+  left: 180px;
+  background-color: #B2CBCF;
+  border-radius: 50%;
+}
+.frame .canvas .middle-item .wing {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #93B3CC;
+}
+.frame .canvas .middle-item .left-wing {
+  position: absolute;
+  left: 25px;
+  top: 35px;
+}
+.frame .canvas .middle-item .right-wing {
+  position: absolute;
+  left: 120px;
+  top: 35px;
+}
+.frame .canvas .middle-item .bee-body {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background-image: repeating-linear-gradient(180deg, #D7C702, #D7C702 10px, #040308 10px, #040308 23px);
+  position: absolute;
+  top: 110px;
+  left: 67px;
+}
+.frame .canvas .middle-item .bee-body .line {
+  height: 13px;
+}
+.frame .canvas .middle-item .bee-body .needle {
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 10px solid #040308;
+  position: absolute;
+  left: 45px;
+  top: 95px;
+}
+.frame .canvas .item-two {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 430px;
+}
+.frame .canvas .item-one {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+.frame .canvas .item-one [class*=bubble], .frame .canvas .item-two [class*=bubble] {
+  border-radius: 50%;
+}
+.frame .canvas .item-one [class*=small], .frame .canvas .item-two [class*=small] {
+  width: 20px;
+  height: 20px;
+}
+.frame .canvas .item-one [class*=medium-small], .frame .canvas .item-two [class*=medium-small] {
+  width: 30px;
+  height: 30px;
+}
+.frame .canvas .item-one [class*=medium], .frame .canvas .item-two [class*=medium] {
+  width: 35px;
+  height: 35px;
+}
+.frame .canvas .item-one [class*=big], .frame .canvas .item-two [class*=big] {
+  width: 50px;
+  height: 50px;
+}
+.frame .canvas .item-one [class*=eggshell], .frame .canvas .item-two [class*=eggshell] {
+  background-color: #CFC68B;
+}
+.frame .canvas .item-one [class*=pale-blue], .frame .canvas .item-two [class*=pale-blue] {
+  background-color: #B7CDCA;
+}
+.frame .canvas .item-one [class*=green], .frame .canvas .item-two [class*=green] {
+  background-color: #769E3E;
+}
+.frame .canvas .item-one [class*=yellow], .frame .canvas .item-two [class*=yellow] {
+  background-color: #D2C200;
+}
+.frame .canvas .item-one [class*=one-one], .frame .canvas .item-two [class*=one-one] {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.frame .canvas .item-one [class*=one-two], .frame .canvas .item-two [class*=one-two] {
+  position: absolute;
+  top: 12px;
+  left: 80px;
+}
+.frame .canvas .item-one [class*=two-one], .frame .canvas .item-two [class*=two-one] {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.frame .canvas .item-one [class*=two-two], .frame .canvas .item-two [class*=two-two] {
+  position: absolute;
+  top: 46px;
+  left: 100px;
+}
+.frame .canvas .item-one [class*=three-one], .frame .canvas .item-two [class*=three-one] {
+  position: absolute;
+  top: 82px;
+  left: 12px;
+}
+.frame .canvas .item-one [class*=three-two], .frame .canvas .item-two [class*=three-two] {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+}
+.frame .canvas .item-one [class*=three-three], .frame .canvas .item-two [class*=three-three] {
+  position: absolute;
+  top: 95px;
+  left: 90px;
+}
+.frame .canvas .item-one [class*=three-four], .frame .canvas .item-two [class*=three-four] {
+  position: absolute;
+  top: 90px;
+  left: 130px;
+}
+.frame .canvas .item-one [class*=four-one], .frame .canvas .item-two [class*=four-one] {
+  position: absolute;
+  top: 125px;
+  left: 8px;
+}
+.frame .canvas .item-one [class*=four-two], .frame .canvas .item-two [class*=four-two] {
+  position: absolute;
+  top: 133px;
+  left: 95px;
+}
+.frame .canvas .item-one .grid-content, .frame .canvas .item-two .grid-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 72px;
+  position: absolute;
+  top: 120px;
+  left: 35px;
+}
+.frame .canvas .item-one .grid-content div, .frame .canvas .item-two .grid-content div {
+  display: flex;
+}
+.frame .canvas .item-one .grid-content div [class*=col-], .frame .canvas .item-two .grid-content div [class*=col-] {
+  height: 2px;
+  width: 1px;
+}
+.frame .canvas .item-one .grid-content div [class*=black], .frame .canvas .item-two .grid-content div [class*=black] {
+  background-color: black;
+}
+.frame .canvas .item-one .grid-content div .col-1, .frame .canvas .item-two .grid-content div .col-1 {
+  width: 1px;
+}
+.frame .canvas .item-one .grid-content div .col-2, .frame .canvas .item-two .grid-content div .col-2 {
+  width: 2px;
+}
+.frame .canvas .item-one .grid-content div .col-3, .frame .canvas .item-two .grid-content div .col-3 {
+  width: 3px;
+}
+.frame .canvas .item-one .grid-content div .col-4, .frame .canvas .item-two .grid-content div .col-4 {
+  width: 4px;
+}
+.frame .canvas .item-one .grid-content div .col-5, .frame .canvas .item-two .grid-content div .col-5 {
+  width: 5px;
+}
+.frame .canvas .item-one .grid-content div .col-6, .frame .canvas .item-two .grid-content div .col-6 {
+  width: 6px;
+}
+.frame .canvas .item-one .grid-content div .col-7, .frame .canvas .item-two .grid-content div .col-7 {
+  width: 7px;
+}
+.frame .canvas .item-one .grid-content div .col-8, .frame .canvas .item-two .grid-content div .col-8 {
+  width: 8px;
+}
+.frame .canvas .item-one .grid-content div .col-9, .frame .canvas .item-two .grid-content div .col-9 {
+  width: 9px;
+}
+.frame .canvas .item-one .grid-content div .col-10, .frame .canvas .item-two .grid-content div .col-10 {
+  width: 10px;
+}
+.frame .canvas .item-one .grid-content div .col-11, .frame .canvas .item-two .grid-content div .col-11 {
+  width: 11px;
+}
+.frame .canvas .item-one .grid-content div .col-12, .frame .canvas .item-two .grid-content div .col-12 {
+  width: 12px;
+}
+.frame .canvas .item-one .grid-content div .col-13, .frame .canvas .item-two .grid-content div .col-13 {
+  width: 13px;
+}
+.frame .canvas .item-one .grid-content div .col-14, .frame .canvas .item-two .grid-content div .col-14 {
+  width: 14px;
+}
+.frame .canvas .item-one .grid-content div .col-15, .frame .canvas .item-two .grid-content div .col-15 {
+  width: 15px;
+}
+.frame .canvas .item-one .grid-content div .col-16, .frame .canvas .item-two .grid-content div .col-16 {
+  width: 16px;
+}
+.frame .canvas .item-one .grid-content div .col-17, .frame .canvas .item-two .grid-content div .col-17 {
+  width: 17px;
+}
+.frame .canvas .item-one .grid-content div .col-18, .frame .canvas .item-two .grid-content div .col-18 {
+  width: 18px;
+}
+.frame .canvas .item-one .grid-content div .col-19, .frame .canvas .item-two .grid-content div .col-19 {
+  width: 19px;
+}
+.frame .canvas .item-one .grid-content div .col-20, .frame .canvas .item-two .grid-content div .col-20 {
+  width: 20px;
+}
+.frame .canvas .item-one .grid-content div .col-21, .frame .canvas .item-two .grid-content div .col-21 {
+  width: 21px;
+}
+.frame .canvas .item-one .grid-content div .col-22, .frame .canvas .item-two .grid-content div .col-22 {
+  width: 22px;
+}
+.frame .canvas .item-one .grid-content div .col-23, .frame .canvas .item-two .grid-content div .col-23 {
+  width: 23px;
+}
+.frame .canvas .item-one .grid-content div .col-24, .frame .canvas .item-two .grid-content div .col-24 {
+  width: 24px;
+}
+.frame .canvas .item-one .grid-content div .col-25, .frame .canvas .item-two .grid-content div .col-25 {
+  width: 25px;
+}
+.frame .canvas .item-one .grid-content div .col-26, .frame .canvas .item-two .grid-content div .col-26 {
+  width: 26px;
+}
+.frame .canvas .item-one .grid-content div .col-27, .frame .canvas .item-two .grid-content div .col-27 {
+  width: 27px;
+}
+.frame .canvas .item-one .grid-content div .col-28, .frame .canvas .item-two .grid-content div .col-28 {
+  width: 28px;
+}
+.frame .canvas .item-one .grid-content div .col-29, .frame .canvas .item-two .grid-content div .col-29 {
+  width: 29px;
+}
+.frame .canvas .item-one .grid-content div .col-30, .frame .canvas .item-two .grid-content div .col-30 {
+  width: 30px;
+}
+.frame .canvas .item-one .grid-content div .col-31, .frame .canvas .item-two .grid-content div .col-31 {
+  width: 31px;
+}
+.frame .canvas .item-one .grid-content div .col-32, .frame .canvas .item-two .grid-content div .col-32 {
+  width: 32px;
+}
+.frame .canvas .item-one .grid-content div .col-33, .frame .canvas .item-two .grid-content div .col-33 {
+  width: 33px;
+}
+.frame .canvas .item-one .grid-content div .col-34, .frame .canvas .item-two .grid-content div .col-34 {
+  width: 34px;
+}
+.frame .canvas .item-one .grid-content div .col-35, .frame .canvas .item-two .grid-content div .col-35 {
+  width: 35px;
+}
+.frame .canvas .item-one .grid-content div .col-36, .frame .canvas .item-two .grid-content div .col-36 {
+  width: 36px;
+}
+.frame .canvas .item-one .grid-content div .col-37, .frame .canvas .item-two .grid-content div .col-37 {
+  width: 37px;
+}
+.frame .canvas .item-one .grid-content div .col-38, .frame .canvas .item-two .grid-content div .col-38 {
+  width: 38px;
+}
+.frame .canvas .item-one .grid-content div .col-39, .frame .canvas .item-two .grid-content div .col-39 {
+  width: 39px;
+}
+.frame .canvas .item-one .grid-content div .col-40, .frame .canvas .item-two .grid-content div .col-40 {
+  width: 40px;
+}
+.frame .canvas .item-one .grid-content div .col-41, .frame .canvas .item-two .grid-content div .col-41 {
+  width: 41px;
+}
+.frame .canvas .item-one .grid-content div .col-42, .frame .canvas .item-two .grid-content div .col-42 {
+  width: 42px;
+}
+.frame .canvas .item-one .grid-content div .col-43, .frame .canvas .item-two .grid-content div .col-43 {
+  width: 43px;
+}
+.frame .canvas .item-one .grid-content div .col-44, .frame .canvas .item-two .grid-content div .col-44 {
+  width: 44px;
+}
+.frame .canvas .item-one .grid-content div .col-45, .frame .canvas .item-two .grid-content div .col-45 {
+  width: 45px;
+}
+.frame .canvas .item-one .grid-content div .col-46, .frame .canvas .item-two .grid-content div .col-46 {
+  width: 46px;
+}
+.frame .canvas .item-one .grid-content div .col-47, .frame .canvas .item-two .grid-content div .col-47 {
+  width: 47px;
+}
+.frame .canvas .item-one .grid-content div .col-48, .frame .canvas .item-two .grid-content div .col-48 {
+  width: 48px;
+}
+.frame .canvas .item-one .grid-content div .col-49, .frame .canvas .item-two .grid-content div .col-49 {
+  width: 49px;
+}
+.frame .canvas .item-one .grid-content div .col-50, .frame .canvas .item-two .grid-content div .col-50 {
+  width: 50px;
+}
+.frame .canvas .item-one .grid-content div .col-51, .frame .canvas .item-two .grid-content div .col-51 {
+  width: 51px;
+}
+.frame .canvas .item-one .grid-content div .col-52, .frame .canvas .item-two .grid-content div .col-52 {
+  width: 52px;
+}
+.frame .canvas .item-one .grid-content div .col-53, .frame .canvas .item-two .grid-content div .col-53 {
+  width: 53px;
+}
+.frame .canvas .item-one .grid-content div .col-54, .frame .canvas .item-two .grid-content div .col-54 {
+  width: 54px;
+}
+.frame .canvas .item-one .grid-content div .col-55, .frame .canvas .item-two .grid-content div .col-55 {
+  width: 55px;
+}
+.frame .canvas .item-one .grid-content div .col-56, .frame .canvas .item-two .grid-content div .col-56 {
+  width: 56px;
+}
+.frame .canvas .item-one .grid-content div .col-57, .frame .canvas .item-two .grid-content div .col-57 {
+  width: 57px;
+}
+.frame .canvas .item-one .grid-content div .col-58, .frame .canvas .item-two .grid-content div .col-58 {
+  width: 58px;
+}
+.frame .canvas .item-one .grid-content div .col-59, .frame .canvas .item-two .grid-content div .col-59 {
+  width: 59px;
+}
+.frame .canvas .item-one .grid-content div .col-60, .frame .canvas .item-two .grid-content div .col-60 {
+  width: 60px;
+}
+.frame .canvas .item-one .grid-content div .col-61, .frame .canvas .item-two .grid-content div .col-61 {
+  width: 61px;
+}
+.frame .canvas .item-one .grid-content div .col-62, .frame .canvas .item-two .grid-content div .col-62 {
+  width: 62px;
+}
+.frame .canvas .item-one .grid-content div .col-63, .frame .canvas .item-two .grid-content div .col-63 {
+  width: 63px;
+}
+.frame .canvas .item-one .grid-content div .col-64, .frame .canvas .item-two .grid-content div .col-64 {
+  width: 64px;
+}
+.frame .canvas .item-one .grid-content div .col-65, .frame .canvas .item-two .grid-content div .col-65 {
+  width: 65px;
+}
+.frame .canvas .item-one .grid-content div .col-66, .frame .canvas .item-two .grid-content div .col-66 {
+  width: 66px;
+}
+.frame .canvas .item-one .grid-content div .col-67, .frame .canvas .item-two .grid-content div .col-67 {
+  width: 67px;
+}
+.frame .canvas .item-one .grid-content div .col-68, .frame .canvas .item-two .grid-content div .col-68 {
+  width: 68px;
+}
+.frame .canvas .item-one .grid-content div .col-69, .frame .canvas .item-two .grid-content div .col-69 {
+  width: 69px;
+}
+.frame .canvas .item-one .grid-content div .col-70, .frame .canvas .item-two .grid-content div .col-70 {
+  width: 70px;
+}
+.frame .canvas .item-one .grid-content div .col-71, .frame .canvas .item-two .grid-content div .col-71 {
+  width: 71px;
+}
+.frame .canvas .item-one .grid-content div .col-72, .frame .canvas .item-two .grid-content div .col-72 {
+  width: 72px;
+}
+/*# sourceMappingURL=main.css.map */
