@@ -13,7 +13,7 @@ body {
   display: flex;
   align-content: center;
   margin-left: calc((100% - 680px) / 2);
-  margin-top: calc((100% - 580px) / 2);
+  margin-top: 100px;
   box-shadow: 30px 1px 15px 15px rgba(0, 0, 0, 0.2);
 }
 .frame .canvas {
